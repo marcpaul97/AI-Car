@@ -1,0 +1,5 @@
+Navigate to terminal in raspberry pi
+type the code below to start the algorithm:
+cd python
+./init.sh
+python NeuralNetwork
