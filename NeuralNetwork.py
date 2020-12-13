@@ -78,7 +78,7 @@ class Dqn(): #Deep Q Learning
         action = self.selectAction(newState) #new action is the new state after the action has been chosen
         if len(self.memory.memory) > 100: #looking at the memory as long as it's below our memory cap
             batch_state, batch_next_state, batch_action, batch_reward = self.memory.sample(100) 
-            self.learn(batch_state, batch_next_state, batch_reward, batch_action)
+            self.Dolearn(batch_state, batch_next_state, batch_reward, batch_action)
         lastAction = action #setting our last action to current action
         lastState = newState #setting our last state to our current state
         lastScore = reward #setting our last score as our current score
